@@ -74,6 +74,8 @@ a:hover {
   text-decoration: none;
 }
 
+
+
 body,
 td,
 th,
@@ -81,43 +83,52 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 14px
 }
+
+@media 
+only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, p,tr { 
+		display: block; 
+	}
+}
+
+
+
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
 }
 
-h2 {
-  margin: 0;
-  font-weight: normal;
+heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 25px;
 }
 
-.papertitle {
+papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 700
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
+name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 220px; /*160px*/
+  height: 165px;
   position: relative;
+  overflow:hidden;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 220px; /*160px*/
+  height: 165px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
