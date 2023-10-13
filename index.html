@@ -41,6 +41,32 @@
       text-align: center;
     }
 
+
+    /* Mobile specific styles */
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 100%;
+        }
+
+        td {
+            display: block;
+            width: 100% !important;
+        }
+
+        /* Image styling for mobile */
+        td:nth-child(odd) {
+            padding-bottom: 20px;
+        }
+    }
+
+    .responsive-image {
+    max-width: 25%; /* Max image size */
+    display: block;  /* block-level helps with centering */
+    margin-left: auto;  /* these two lines will */
+    margin-right: auto; /* center the image */
+}
+
+
   </style>
 </head>
 
@@ -64,11 +90,13 @@
         </p>
       </div>
 
-      <div style="flex: 1; min-width: 200px; max-width: 40%;">
-        <a href="images/Kevin.jpg">
-          <img src="images/Kevin.jpg" alt="Profile of Kevin Wells" style="width: 70%; border-radius: 8px;">
-        </a>
-      </div>
+      <!-- Kevin's Image -->
+    <div>
+      <a href="images/Kevin.jpg">
+          <img src="images/Kevin.jpg" alt="Profile of Kevin Wells" class="responsive-image" style="border-radius: 8px;">
+      </a>
+  </div>
+
 </section>
 
     
@@ -148,12 +176,10 @@
           <div class="spacer"></div>
           
           <heading>Press</heading>
-          <div class="spacer-2"></div>
           <section style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
             <div style="flex: 1; min-width: 250px; max-width: 100%;">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                  <tbody>
 
               <tr> <!-- Assuming this row tag is there since you're using <td> -->
                 <!-- Image TD -->
@@ -315,6 +341,7 @@
                 <br>
             </td>
         </tr>
+      </tbody>
       </table>
     </div>
   </section>
