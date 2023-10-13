@@ -14,9 +14,15 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   
   <style>
+
     .spacer {
       height: 50px;
     }
+
+    section {
+        flex-direction: column-reverse;
+        text-align: left;
+      }
 
     .spacer-2 {
       height: 25px;
@@ -41,40 +47,33 @@
       text-align: center;
     }
 
-        
+
+    .centresection  {
+      text-align: center;
+    }
+    
 
     /* Mobile specific styles */
     @media only screen and (max-width: 768px) {
-        table {
-            width: 100%;
-        }
-
-        .hoverZoomLink {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            td {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-
-        /* Image styling for mobile */
-        td:nth-child(odd) {
-            padding-bottom: 20px;
-        }
+      table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;  /* This will remove any spacing between cells */
     }
+
+}
+
 
 
   </style>
 </head>
+<section class="centresection"> 
+  <name>Professor Kevin Wells Lab</name>
+</section>
 
-<body>
   <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;max-width:768px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -84,31 +83,32 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Professor Kevin Wells Lab</name>
-                  <p>Hi, My name is Kevin Wells and I am a Professor in Artificial Intelligence (AI) for Healthcare and the Director of Surrey DataHub at the University of Surrey, United Kingdom.</p>
-                   <p> As a leader in AI & One Health research, I am dedicated to deriving insights that enhance the health and welfare of both humans and animals.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:kevinwells@surrey.ac.uk">Email</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.co.uk/citations?user=czQO8iIAAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/kevin-wells-56974934/">LinkedIn</a>
-                    &nbsp/&nbsp
-                    <a href="https://www.surrey.ac.uk/people/kevin-wells">Surrey Bio</a>
-                  </p>
-
-                  
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/Kevin.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="images/Kevin.jpg" class="hoverZoomLink"></a>
+                    
                 </td>
               </tr>
             </tbody>
           </table>
+
+          <p>Hi, My name is Kevin Wells and I am a Professor in Artificial Intelligence (AI) for Healthcare and the Director of Surrey DataHub at the University of Surrey, United Kingdom.</p>
+           <p> As a leader in AI & One Health research, I am dedicated to deriving insights that enhance the health and welfare of both humans and animals. </p>
+
+            
+          <div style="text-align: center;">
+              <a href="images/Kevin.jpg">
+                  <img style="width: 50%; max-width: 60%;" alt="profile photo" src="images/Kevin.jpg">
+              </a>
+          </div>
+
+
     
-    </body>
-    </html>
+          <p style="text-align:center">
+            <a href="mailto:kevinwells@surrey.ac.uk">Email</a> &nbsp/&nbsp
+            <a href="https://scholar.google.co.uk/citations?user=czQO8iIAAAAJ&hl=en">Google Scholar</a>
+            &nbsp/&nbsp
+            <a href="https://www.linkedin.com/in/kevin-wells-56974934/">LinkedIn</a>
+            &nbsp/&nbsp
+            <a href="https://www.surrey.ac.uk/people/kevin-wells">Surrey Bio</a>
+          </p>
    
     
     
@@ -182,17 +182,28 @@
 
 
           <div class="spacer"></div>
-          <heading>Honours & Affiliations:</heading>
+          <heading>Honours & Affiliations</heading>
           <ul>
               <li>Proud Fellow of the Surrey Institute for People-Centred AI (PAI).</li>
               <li>Honoured to have served as the Chair of the University Ethics Committee from 2018-2022.</li>
           </ul>
 
           <div class="spacer"></div>
+
+
+          <heading>Awards</heading>
+          <ul>
+              <li>##########.</li>
+          </ul>
+
+          <div class="spacer"></div>
+
+          
           
           <heading>Press</heading>
           <div class="spacer"></div>
           <section style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
             <div style="flex: 1; min-width: 250px; max-width: 100%;">
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                   <tbody>
@@ -247,7 +258,7 @@
                   <!-- Image TD -->
                   <td style="width:30%; vertical-align:middle; padding-right: 20px;">
                       <a href="https://www.bva.co.uk/news-and-blog/news-article/role-of-artificial-intelligence-in-vet-medicine-to-be-explored-at-bva-live/">
-                          <img src="https://www.bva.co.uk/media/5084/chagpt_768x461.png" alt="Article Image" style="max-width: 100%;">
+                          <img src="https://www.bva.co.uk/media/5084/chagpt_768x461.png" alt="Article Image" style="width:100%;max-width:100%">
                       </a>
                   </td>
               
@@ -315,7 +326,7 @@
               <!-- Image TD -->
               <td style="width:30%; vertical-align:middle; padding-right: 20px;">
                   <a href="https://www.surrey.ac.uk/news/surrey-students-develop-mobile-3d-x-ray-scanner-animals">
-                      <img src="https://www.surrey.ac.uk/sites/default/files/styles/image_gallery/public/2020-06/Vet%20Scanner%201.jpg?itok=rxWZks4w" alt="Article Image" style="max-width: 100%;">
+                      <img src="https://www.surrey.ac.uk/sites/default/files/styles/image_gallery/public/2020-06/Vet%20Scanner%201.jpg?itok=rxWZks4w" alt="Article Image" style="max-width: 100%; width: auto; height: auto;">
                   </a>
               </td>
           
