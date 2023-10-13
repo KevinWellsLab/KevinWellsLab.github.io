@@ -35,6 +35,12 @@
       margin: 0;
       text-align: center;
     }
+
+    heading {
+      display: block;
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -44,8 +50,8 @@
       <h1>Professor Kevin Wells Lab</h1>
     </header>
 
-    <section style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      <div style="flex: 1; min-width: 250px; max-width: 60%;">
+    <section style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+      <div style="flex: 1; min-width: 250px; max-width: 100%;">
         <p>Hi, my name is Kevin Wells and I am a Professor in Artificial Intelligence (AI) for Healthcare and the Director of Surrey DataHub at the University of Surrey, United Kingdom.</p>
         <p>As a leader in AI & One Health research, I am dedicated to deriving insights that enhance the health and welfare of both humans and animals.</p>
         <p style="text-align:center">
@@ -60,11 +66,13 @@
 
       <div style="flex: 1; min-width: 200px; max-width: 40%;">
         <a href="images/Kevin.jpg">
-          <img src="images/Kevin.jpg" alt="Profile of Kevin Wells" style="width: 100%; border-radius: 8px;">
+          <img src="images/Kevin.jpg" alt="Profile of Kevin Wells" style="width: 70%; border-radius: 8px;">
         </a>
       </div>
-    </section>
+</section>
 
+    
+    <div class="spacer"></div>
     <heading>Surrey DataHub</heading>
 
           <h3>Director of Surrey DataHub:</h3>
@@ -138,8 +146,11 @@
           </ul>
 
           <div class="spacer"></div>
+          
           <heading>Press</heading>
           <div class="spacer-2"></div>
+          <section style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div style="flex: 1; min-width: 250px; max-width: 100%;">
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -305,6 +316,8 @@
             </td>
         </tr>
       </table>
+    </div>
+  </section>
   </main>
 </body>
 
