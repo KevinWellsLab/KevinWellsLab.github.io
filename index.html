@@ -41,22 +41,7 @@
       text-align: center;
     }
 
-    .container {
-            display: flex;
-            flex-direction: column-reverse; /* default to image at bottom for mobile */
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-    
-    /* For mobile view by default, image will be below the text */
-    .profile-section {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
+        
 
     /* Mobile specific styles */
     @media only screen and (max-width: 768px) {
@@ -64,23 +49,24 @@
             width: 100%;
         }
 
-        td {
-            display: block;
-            width: 100% !important;
-        }
+        .hoverZoomLink {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
 
         /* Image styling for mobile */
         td:nth-child(odd) {
             padding-bottom: 20px;
         }
     }
-
-    .responsive-image {
-    max-width: 25%; /* Max image size */
-    display: block;  /* block-level helps with centering */
-    margin-left: auto;  /* these two lines will */
-    margin-right: auto; /* center the image */
-}
 
 
   </style>
@@ -98,8 +84,8 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Professor Kevin Wells</name>
-                  <p>I am a Professor in Artificial Intelligence (AI) for Healthcare and the Director of Surrey DataHub at the University of Surrey, United Kingdom.</p>
+                    <name>Professor Kevin Wells Lab</name>
+                  <p>Hi, My name is Kevin Wells and I am a Professor in Artificial Intelligence (AI) for Healthcare and the Director of Surrey DataHub at the University of Surrey, United Kingdom.</p>
                    <p> As a leader in AI & One Health research, I am dedicated to deriving insights that enhance the health and welfare of both humans and animals.
                   </p>
                   <p style="text-align:center">
