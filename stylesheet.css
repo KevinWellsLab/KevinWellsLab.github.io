@@ -1,146 +1,236 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
-}
-
-@media 
-only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, p,tr { 
-		display: block; 
-	}
+.research-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
+.spacer {
+  height: 50px;
+}
 
+section {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+.spacer-2 {
+  height: 25px;
+}
+
+.responsive-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.responsive-footer p {
+  margin: 0;
+  text-align: center;
 }
 
 heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 25px;
+  display: block;
+  text-align: center;
 }
 
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700
+/* OR applying to specific elements */
+h1 {
+    font-family: 'Ubuntu';
+    font-weight: 700px;
+    font-size: 30px;
+  }
+
+ /* OR applying to specific elements */
+h2, h3,p, li, em, papertitle {
+  font-family: 'Ubuntu';
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+.centresection  {
+  text-align: center;
 }
 
-.one {
-  width: 220px; /*160px*/
-  height: 165px;
-  position: relative;
-  overflow:hidden;
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.two {
-  width: 220px; /*160px*/
-  height: 165px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #043f79;
+}
+
+/* Additional Styles for a Futuristic Look */
+nav {
+  font-family: 'Lato', sans-serif;
+  padding: 15px 0;  /* Adjusted padding for vertical centering */
+
+}
+
+#logo-text {
+  margin-right: auto;
+}
+
+#logo-text a {
+  font-size: 25px; /* or whatever size you want for the text */
+  font-weight: bold; /* optional, for bold text */
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 20px
+}
+
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  right: 20px;
+  top: 15px;
+  z-index: 1500;  /* So it's above the nav */
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 2px 0;
+  transition: 0.4s;
 }
 
-span.highlight {
-  background-color: #ffffd0;
+
+
+
+/* Show burger icon on smaller screens */
+@media only screen and (max-width: 768px) {
+
+  nav {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Lowered shadow */
+
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 800px; /* or whatever max width suits your design */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .responsive-footer p {
+      font-size: 16px; /* adjust as needed */
+  }
+
+  
+
+.menu-toggle {
+  display: flex;
 }
+
+nav ul {
+    display: none;  /* Hide main menu items by default */
+}
+
+nav.active ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #043f79;
+}
+
+.publications {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+}
+.publication {
+  margin-bottom: 20px;
+}
+
+.publication-title {
+  font-weight: bold;
+}
+.publication-authors, .publication-date {
+  font-style: italic;
+}
+.publication-link {
+  text-decoration: none;
+}
+
+.publications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
